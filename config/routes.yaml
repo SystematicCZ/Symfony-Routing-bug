@@ -1,0 +1,6 @@
+controllers:
+    resource: '../src/**/*Controller.php'
+    type: attribute
+    prefix:
+        cs: ~
+        en: ~
