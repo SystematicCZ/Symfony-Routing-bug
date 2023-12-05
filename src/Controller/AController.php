@@ -12,9 +12,9 @@ class AController extends AbstractController
     /**
      * @throws \Exception
      */
-    #[Route(path: '/', name: 'a_method_one')]
+    #[Route(path: '/a', name: 'a_method')]
     public function aMethodOne(): Response
     {
-        throw new \Exception('A method one');
+        throw new \Exception('A controller method');
     }
 }

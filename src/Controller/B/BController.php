@@ -13,12 +13,9 @@ class BController extends AbstractController
     /**
      * @throws \Exception
      */
-    #[Route(path: [
-        'cs' => '/',
-        'en' => '/en'
-    ], name: 'b_method_one', priority: 9999)]
+    #[Route(path:  '/b', name: 'b_method', priority: 9999)]
     public function bMethodOne(): Response
     {
-        throw new \Exception('B method one');
+        throw new \Exception('B controller method');
     }
 }
